@@ -14,10 +14,9 @@ Automatically opens browser and runs app, but if not, then use [http://localhost
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# GIT deployment using yaml:
+The YAML file is located in .github/workflows and is called superlinter.yml.\
+The YAML file runs on any code commit to the main branch, and performs a linting on the codebase by checking out the repository, setting up Node.js and installing dependencies.
 
 
 # Project files:
@@ -47,9 +46,5 @@ Styles the countries page.
 ### `country.css:`
 Styles the country page.
 
-
-# GIT deployment using yaml:
-The YAML file is located in .github/workflows and is called superlinter.yml.\
-The YAML file runs on any code commit to the main branch, and performs a linting on the codebase by checking out the repository, setting up Node.js and installing dependencies.
 
 
