@@ -25,4 +25,22 @@ jobs:
     - name: Install dependencies
       run: |
         npm i
-        npm start
+    
+    - name: Start npm in background
+      run: |
+        nohup npm start &  # Run npm start in the background using 'nohup' and '&'
+        echo $! > npm_pid.txt  # Save the process ID for later use
+
+    - name: Do some other work
+      run: |
+        echo "Performing other tasks while npm start runs in the background"
+        # Add any additional tasks here
+
+    - name: Stop npm start gracefully
+      run: |
+        kill $(cat npm_pid.txt)  # Stop the background process using its saved PID
+        wait $(cat npm_pid.txt)  # Ensure the process is fully terminated before proceeding
+
+    - name: Clean up and finish
+      run: |
+        echo "npm start has been stopped, and all tasks are complete"
