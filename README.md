@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### `PLEASE NOTE: I have added a node_modules.7z file to the codebase. The app worked perfectly when I built it on my desktop, but when I try to do an npm install to generate the node_modules folder from my json package files, it fails to run. If you have issues running the app, please use the node_modules folder from the zip file instead and the app will work correctly.`
+
 ## Available Scripts
 
 In the project directory, you can run:
