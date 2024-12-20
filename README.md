@@ -16,7 +16,9 @@ You may also see any lint errors in the console.
 
 # GIT deployment using yaml:
 The YAML file is located in .github/workflows and is called superlinter.yml.\
-The YAML file runs on any code commit to the main branch, and performs a linting on the codebase by checking out the repository, setting up Node.js and installing dependencies.
+The YAML file runs on any code commit to the main branch, and performs a linting on the codebase by checking out the repository, setting up Node.js and installing dependencies.\
+\
+I didn't include `npm start` in the YAML file, but the webpack does compile in GitHub. Please download the files and open in VS Code, or other IDE of choice, and run `npm i` to build dependencies and then `npm start` to run the app.
 
 
 # Project files:
