@@ -24,4 +24,3 @@ jobs:
     - name: Install dependencies
       run: |
         npm i
-        npm start
